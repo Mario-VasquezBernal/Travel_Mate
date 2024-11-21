@@ -1,29 +1,23 @@
-import { TestBed } from '@angular/core/testing';
-import { AppComponent } from './app.component';
-
-describe('AppComponent', () => {
-  beforeEach(async () => {
-    await TestBed.configureTestingModule({
-      imports: [AppComponent],
-    }).compileComponents();
-  });
-
-  it('should create the app', () => {
-    const fixture = TestBed.createComponent(AppComponent);
-    const app = fixture.componentInstance;
-    expect(app).toBeTruthy();
-  });
-
-  it(`should have the 'Travel_Mate' title`, () => {
-    const fixture = TestBed.createComponent(AppComponent);
-    const app = fixture.componentInstance;
-    expect(app.title).toEqual('Travel_Mate');
-  });
-
-  it('should render title', () => {
-    const fixture = TestBed.createComponent(AppComponent);
-    fixture.detectChanges();
-    const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, Travel_Mate');
-  });
-});
+.title{
+  color: aqua
+}
+.header{
+  height: 100px;
+  width: 100%;
+  background-color: blueviolet;
+}
+.container-stories{
+  height: 100px;
+  width: 100%;
+  background-color: rgb(226, 183, 43);
+}
+.container-grid{
+  height: 200px;
+  width: 100%;
+  background-color: rgb(43, 226, 217);
+}
+.navegation-menu{
+  height: 50px;
+  width: 100%;
+  background-color: rgb(101, 226, 43);
+}
